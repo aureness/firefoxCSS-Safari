@@ -1,0 +1,18 @@
+@import "parts/colors.css";
+@import "parts/toolbar-navbar.css";
+@import "parts/tabs.css";
+@import "parts/urlbar.css";
+@import "parts/buttons.css";
+@import "bookmarkbar.css";
+
+/* OPTIONS */
+@import "parts/sticky-tabs.css"; /* active tab will be always visible at the edge of the window  */
+@import "parts/drag-window-toolbar.css"; /* dragging by clicking toolbar */
+@import "parts/hide-menu-btn.css"; /* hide menu button and use global menu instead */
+@import "parts/hide-single-tab.css"; /* hide tabbar if only one page is opened */
+@import "parts/tabs-fill-tabbar.css"; /* wide tabs filling all tabbar, no max-width */
+@import "parts/tab-close-btn-left.css"; /* show close tab btn at left */
+@import "parts/tab-close-btn-only-active-tab.css"; /* always show close btn only on active tab, and on hover on others */
+@import "parts/fade-tab-title-inactive-wnd.css"; /* tab title if fade in grey if window is not focused */
+@import "parts/custom-icons.css"; /* custom icons in macOS style */
+@import "parts/hide-all-tabs-btn.css"; /* hide All tabs button with drop down menu */

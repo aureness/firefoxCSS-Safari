@@ -1,0 +1,20 @@
+.tab-close-button {
+    width: 16px !important;
+    height: 16px !important;
+    padding: 2px !important;
+    border-radius: 2px !important;
+    box-sizing: border-box;
+    color: var(--close-btn-color) !important;
+    margin-inline: 0px 2px !important;
+    z-index: 110;
+}
+
+.close-icon:hover {
+    background-color: var(--close-btn-color-bg) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .close-icon:hover {
+        background-color: var(--close-btn-color-bg) !important;
+    }
+}

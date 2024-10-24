@@ -1,0 +1,64 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+:root {
+    --urlbar-icon-padding: 4px !important;
+}
+
+#urlbar {
+   --urlbar-height: 27px !important;
+}
+
+#urlbar:not([breakout-extend]) #urlbar-background {
+  border: 1px solid var(--urlbar-border) !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+
+  height: 27px !important;
+  top: 2px !important;
+}
+
+#identity-box {
+  position: relative;
+  left: -1px;
+}
+
+#identity-box > .identity-box-button, #urlbar-label-box {
+   border-radius: 8px;
+}
+
+#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button, #urlbar-label-box {
+  background: transparent !important;
+}
+
+#urlbar[focused]:not([suppress-focus-border]) > #urlbar-background,
+#searchbar:focus-within {
+  outline: 3px solid var(--urlbar-focus-outline) !important;
+   border: 1px solid var(--urlbar-focus-border) !important;
+}
+
+
+#urlbar:not([breakout-extend]) .urlbar-input-container {
+  overflow: hidden;
+  border-radius: 8px;
+  height: 27px !important;
+  padding: 0px !important;
+  position: relative;
+  top: 2px;
+}
+
+.urlbar-icon,
+.sharing-icon, #identity-icon, #permissions-granted-icon, #tracking-protection-icon,
+#blocked-permissions-container > .blocked-permission-icon {
+    width: 14px !important;
+    height: 14px !important;
+    align-self: center !important;
+}
+
+.urlbar-page-action {
+    width: calc(var(--urlbar-min-height) - 8px - 2 * var(--urlbar-container-padding)) !important;
+    padding: var(--urlbar-icon-padding) !important;
+}
+
+#tracking-protection-icon-container {
+    padding-inline-start: 6px;
+}

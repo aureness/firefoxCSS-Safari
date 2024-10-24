@@ -1,0 +1,9 @@
+.tab-close-button {
+    opacity: 0;
+}
+
+.tabbrowser-tab:hover .tab-close-button,
+.tabbrowser-tab:is([selected], [visuallyselected], [multiselected]) .tab-close-button
+{
+    opacity: 1 !important;
+}
