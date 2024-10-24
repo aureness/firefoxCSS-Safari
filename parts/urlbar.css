@@ -60,5 +60,5 @@
 }
 
 #tracking-protection-icon-container {
-    padding-inline-start: 6px;
+    padding-inline-start: 6px !important;
 }
