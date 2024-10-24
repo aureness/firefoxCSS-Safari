@@ -1,0 +1,10 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon,
+.tabbrowser-tab:is([selected], [visuallyselected], [multiselected])
+{
+    z-index: 99;
+    position: sticky;
+    left: 0;
+    right: 0;
+}

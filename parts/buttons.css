@@ -1,0 +1,13 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#back-button {
+    margin: auto 1px auto 6px !important;
+}
+
+#forward-button {
+    margin: auto 6px auto 1px !important;
+}
+
+#forward-button .toolbarbutton-icon, #back-button .toolbarbutton-icon {
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 22px) !important;
+}
