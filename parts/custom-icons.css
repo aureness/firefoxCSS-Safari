@@ -1,0 +1,36 @@
+#back-button {
+    list-style-image: url("../icons/back.svg") !important;
+
+    .toolbarbutton-icon:-moz-window-inactive {
+        opacity: 0.5;
+    }
+}
+#back-button[disabled] {
+    .toolbarbutton-icon:-moz-window-inactive {
+        opacity: 0.3;
+    }
+}
+
+#forward-button {
+    list-style-image: url("../icons/forward.svg") !important;
+
+    .toolbarbutton-icon:-moz-window-inactive {
+        opacity: 0.5;
+    }
+}
+
+#forward-button[disabled] {
+    .toolbarbutton-icon:-moz-window-inactive {
+        opacity: 0.3;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #forward-button {
+        list-style-image: url("../icons/forward-dark.svg") !important;
+    }
+
+    #back-button {
+        list-style-image: url("../icons/back-dark.svg") !important;
+    }
+}

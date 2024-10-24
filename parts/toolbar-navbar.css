@@ -1,0 +1,51 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+:root {
+    --toolbarbutton-inner-padding: 5px !important;
+}
+
+#navigator-toolbox {
+    --nav-bar-height: 52px;
+    background-color: var(--window-bg) !important;
+}
+
+#nav-bar {
+    order: -1;
+    padding-left: 84px !important;
+    height: var(--nav-bar-height);
+}
+
+.titlebar-spacer {
+    display: none;
+}
+
+.titlebar-buttonbox-container {
+    position: fixed;
+    top: 0;
+    height: var(--nav-bar-height);
+}
+
+.browser-toolbar {
+   background-color: var(--toolbar-bgcolor) !important;
+}
+
+.titlebar-buttonbox {
+  &:-moz-locale-dir(ltr) {
+    margin-inline: 20px 0 !important;
+  }
+}
+
+#PanelUI-button {
+    margin-inline-end: 10px;
+}
+
+/* buttons in toolbar */
+toolbar .toolbaritem-combined-buttons {
+    margin-inline: -8px !important;
+}
+
+.toolbarbutton-1 {
+    margin: auto 6px !important;
+    padding: 0 !important;
+}
+/* end button in toolbar */

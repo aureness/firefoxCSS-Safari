@@ -1,0 +1,77 @@
+:root {
+    --toolbarbutton-hover-background: #F0F0F0 !important;
+    --window-bg: #fdfdfd !important;
+    --window-bg--inactive: #f0f0f0;
+    --tabbar-background: linear-gradient(
+            #d8d8d8 1px, #f0f0f0 2px, #efefef 3px, #f0f0f0 4px, #f0f0f0
+    ) !important;
+    --tab-hover: linear-gradient(180deg, #c9c9c9 1px, #cdcdcd 1px, #e3e3e3 3px, #e3e3e3 100%);
+    --tab-border: #dedede;
+
+    --urlbar-background: #f0f0f0 !important;
+    --urlbar-border: #e3e3e3 !important;
+
+    --urlbar-focus-outline: #97b5fa;
+    --urlbar-focus-border: #88a7ed;
+
+    --toolbar-bgcolor: var(--window-bg) !important;
+    --close-btn-color: #888888 !important;
+    --close-btn-color-bg: color-mix(in srgb, #383838 10%, transparent);
+}
+
+:root:-moz-window-inactive {
+    --window-bg: #f0f0f0 !important;
+    --toolbarbutton-hover-background: #E3E3E3 !important;
+    --tabbar-background: linear-gradient(
+            #cbcbcb 1px, #e0e0e0 2px, #e2e2e2 3px, #e2e2e2 3px, #e3e3e3
+    ) !important;
+    --tab-hover: linear-gradient(180deg, #bcbcbc 1px, #c0c0c0 1px, #d6d6d6 3px, #d6d6d6 100%) !important;
+    --tab-border: #d1d1d1 !important;
+    --urlbar-border: #d3d3d3 !important;
+    --toolbar-bgcolor: var(--window-bg) !important;
+    --tab-label-color: #b0b0b0 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --button-active-bgcolor: #535353 !important;
+        --buttton-hover-bgcolor: #454546 !important;
+        --toolbarbutton-hover-background: #454546 !important;
+        --window-bg: #363636 !important;
+        --window-bg--inactive: #f0f0f0;
+        --tabbar-background: linear-gradient(
+                #161616 1px, #1d1d1d 2px
+        ) !important;
+        --tab-hover: linear-gradient(
+                #1f1f1f 1px, #292929 2px
+        ) !important;
+        --tab-border: #474747 !important;
+
+        --urlbar-background: var(--window-bg) !important;
+        --urlbar-border: #4e4e4e !important;
+
+        --urlbar-focus-outline: #97b5fa !important;
+        --urlbar-focus-border: #4e4e4e !important;
+
+        --toolbar-bgcolor: var(--window-bg) !important;
+
+        --toolbarbutton-icon-fill: #b6b6b6 !important;
+        --close-btn-color: #a4a4a4 !important;
+        --close-btn-color-bg: color-mix(in srgb, #a4a4a4 30%, transparent);
+    }
+
+    :root:-moz-window-inactive {
+        --window-bg: #282828 !important;
+        --toolbarbutton-hover-background: #353535 !important;
+        --tabbar-background: linear-gradient(
+                #101010 1px, #161616 2px
+        ) !important;
+        --tab-hover: linear-gradient(
+                #191919 1px, #222222 2px
+        ) !important;
+        --tab-border: #393939 !important;
+        --urlbar-border: #424242 !important;
+        --toolbar-bgcolor: var(--window-bg) !important;
+        --tab-label-color: #b0b0b0 !important;
+    }
+}
