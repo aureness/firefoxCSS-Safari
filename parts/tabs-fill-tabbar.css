@@ -1,0 +1,12 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+.tabbrowser-tab {
+    flex: 1 !important;
+    max-width: unset !important;
+}
+
+.tabbrowser-tab {
+    &:not([pinned], [fadein]) {
+        visibility: collapse !important;
+    }
+}
