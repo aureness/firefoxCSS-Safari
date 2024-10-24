@@ -1,5 +1,12 @@
 # Firefox Safari theme
 
+<picture width="50">
+  <source media="(prefers-color-scheme: dark)" srcset="./screenshots/dark.png?raw=true">
+  <source media="(prefers-color-scheme: light)" srcset="./screenshots/light.png?raw=true">
+  <img alt="Screenshot of the Firefox browser with my theme">
+</picture>
+
+
 Inspired by Apple Safari design. I've tried to mimic as close as I can (and as I want).
 
 Some styles are based on the [vinceliuice/WhiteSur-firefox-theme](https://github.com/vinceliuice/WhiteSur-firefox-theme/). 
