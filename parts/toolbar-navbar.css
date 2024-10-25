@@ -11,8 +11,15 @@
 
 #nav-bar {
     order: -1;
-    padding-left: 84px !important;
     height: var(--nav-bar-height);
+
+    padding-left: 84px !important;/* reserved space for traffic light */
+
+    /* remove reserved space for traffic light if in fullscreen or have separate titlebar */
+    :root:not([chromemargin]) & ,
+    :root:is([inFullscreen]) & {
+        padding-left: 0 !important;
+    }
 }
 
 .titlebar-spacer {
@@ -50,3 +57,4 @@ toolbar .toolbaritem-combined-buttons {
     padding: 0 !important;
 }
 /* end button in toolbar */
+
