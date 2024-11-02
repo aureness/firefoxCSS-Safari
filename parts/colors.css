@@ -10,6 +10,7 @@
 
     --urlbar-background: #f0f0f0 !important;
     --urlbar-border: #e3e3e3 !important;
+    --urlbar-background-new-tab: #ececec;
 
     --urlbar-focus-outline: #97b5fa;
     --urlbar-focus-border: #88a7ed;
@@ -30,6 +31,7 @@
     --urlbar-border: #d3d3d3 !important;
     --toolbar-bgcolor: var(--window-bg) !important;
     --tab-label-color: #b0b0b0 !important;
+    --urlbar-background-new-tab: #e3e3e3 !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +60,7 @@
         --toolbarbutton-icon-fill: #b6b6b6 !important;
         --close-btn-color: #a4a4a4 !important;
         --close-btn-color-bg: color-mix(in srgb, #a4a4a4 30%, transparent);
+        --urlbar-background-new-tab: var(--window-bg) !important;
     }
 
     :root:-moz-window-inactive {
