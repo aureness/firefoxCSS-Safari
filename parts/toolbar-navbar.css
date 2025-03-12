@@ -41,12 +41,12 @@
 }
 
 /* buttons in toolbar */
-toolbar .toolbaritem-combined-buttons {
-    margin-inline: -8px !important;
-}
-
-.toolbarbutton-1 {
+.chromeclass-toolbar-additional {
     margin: auto 6px !important;
     padding: 0 !important;
+}
+
+.unified-extensions-item {
+    margin-left: 0 !important;
 }
 /* end button in toolbar */
