@@ -22,6 +22,10 @@
     }
 }
 
+[macnativefullscreen][inFullscreen] #nav-bar {
+    padding-left: 8px !important;
+}
+
 .titlebar-spacer {
     display: none;
 }
