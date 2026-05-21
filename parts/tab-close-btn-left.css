@@ -4,4 +4,8 @@
 
 .tab-content {
     padding: 0 22px 0 4px !important;
+
+    &[pinned] {
+	padding: 0 22px !important;
+    }
 }
