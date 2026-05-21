@@ -46,7 +46,11 @@
 }
 
 .tab-content {
-  padding: 0 4px 0 4px !important;
+    padding: 0 4px 0 4px !important;
+
+    &[pinned] {
+	padding: 0 10px !important;
+    }
 }
 
 :root:not([privatebrowsingmode], [firefoxviewhidden]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
@@ -99,7 +103,7 @@ display: flex;
 }
 
 .tab-close-button {
-  &[pinned], #tabbrowser-tabs[closebuttons="activetab"]:not([orient="vertical"]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-content > &:not([selected]) {
+  #tabbrowser-tabs[closebuttons="activetab"]:not([orient="vertical"]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-content > &:not([selected]) {
     display: inline-flex !important;
   }
 }
@@ -131,4 +135,17 @@ display: flex;
 
 .tabbrowser-tab {
     padding: 0 !important;
+}
+
+#tabbrowser-tabs [pinned] {
+    min-width: fit-content !important;
+    
+    & .tab-label-container {
+	display: none;
+    }
+}
+
+#pinned-tabs-container {
+    border-right: 1px solid;
+    border-color: var(--tab-border);
 }
